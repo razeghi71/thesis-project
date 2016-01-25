@@ -6,7 +6,7 @@
 \newcommand{\ThesisType}
 {پایان‌نامه‌ی کارشناسی}
 \newcommand{\ThesisTitle}
-{طراحی و پیاده‌سازی یک نرم‌افزار مدیریت رمز‌ عبور مقاوم در برابر KeyLogger }
+{طراحی و پیاده‌سازی یک نرم‌افزار مدیریت رمز‌ عبور مقاوم در برابر کلیددزد }
 \newcommand{\ThesisAuthor}
 {محمد رازقی رستمی}
 \newcommand{\ThesisSupervisor}
