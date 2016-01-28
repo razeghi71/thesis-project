@@ -1,13 +1,13 @@
-
 %----------------------------------------------------------------------------
 %
 %  M.Sc. Thesis
-%  [Put Your Thesis Title Here]
-%  By: [Put Your Name Here]
+%  Design And Implementation Of A Password-Manager Secured Against Keylogger
+%  By: Mohammad Razeghi
 %
 %----------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------
+%
 %
 %  LaTeX Thesis Template (v2.0)
 %  By: Hamid Zarrabi-Zadeh
@@ -17,10 +17,15 @@
 %      Ehsan Emamjomeh-Zadeh
 %      Omid Gheibi
 %
+%
 %----------------------------------------------------------------------------
 
 
 \documentclass[oneside,a4paper,11pt]{book}
+\usepackage{afterpage}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{booktabs}
 
 \input{styles/common.tex}
 \input{styles/custom.tex}
@@ -32,8 +37,13 @@
 
 %\pagenumbering{alph}
 
+\newpage
+\afterpage{\null\newpage}
+
 \input{front/info.tex}
 \input{front/template/title.tex}
+\newpage
+\afterpage{\null\newpage}
 
 \input{front/template/besmellah.tex}
 %\input{front/template/signatures.tex}
@@ -45,33 +55,24 @@
 %\input{front/acknowledge.tex}
 \input{front/abstract.tex}
 
-
 % -------------------- Table of Contents --------------------
-
 
 \pagestyle{fancy}
 
 \tableofcontents \newpage
 \listoffigures \newpage
-%	\listoftables \newpage
+\listoftables \newpage
 
-%\pagenumbering{arabic}
+% \pagenumbering{arabic}
 
 % -------------------- Chapters --------------------
 
-%\input{chapters/guide}
-%\input{chapters/writing}
-%\input{chapters/introduction}
-%\input{chapters/definitions}
-%\input{chapters/literature}
-%\input{chapters/results}
-%\input{chapters/conclusions}
-
-\بخش{تعاریف اولیه و طرح مشکل}
+\بخش{سرآغاز}
 \input{chapters/passman-what}
-\input{chapters/passman-example}
 \input{chapters/problems}
-\بخش{بیان راه‌حل‌ها و نرم‌افزار طراحی شده}
+\بخش{کارهای پیشین}
+\input{chapters/passman-example}
+\بخش{راه‌حل پیشنهادی}
 \input{chapters/linux}
 \input{chapters/solutions}
 \input{chapters/software}
@@ -87,19 +88,18 @@
 
 % -------------------- Bibliography --------------------
 
-
 \input{bibs/bibs.tex}
 
-
 % -------------------- English Pages --------------------
-
 
 \newgeometry{left=3cm,right=2.5cm}
 
 \input{front/dictionary}
+\input{front/abstract-eng.tex}
 \input{front/template/title-eng.tex}
 
 
 % -------------------- The End! --------------------
+
 
 \end{document}
